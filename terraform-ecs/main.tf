@@ -65,8 +65,8 @@ resource "aws_ecs_service" "hello_world_service" {
 
   network_configuration {
     assign_public_ip = true
-    security_groups  = ["sg-0b80b497c45782089"]
-    subnets          = ["subnet-010677c7ca50c7227", "subnet-059433eb5160b72b1"]
+    security_groups  = ["sg-07c6caad7f69dd320"]
+    subnets          = ["subnet-0f7bf31dcfe3ad564", "subnet-030f6062c36d7a4f2"]
   }
 
   load_balancer {
