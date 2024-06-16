@@ -80,8 +80,8 @@ resource "aws_alb" "hello_world_alb" {
   name               = "hello-world-alb-6"
   internal           = false
   load_balancer_type = "application"
-  security_groups    = ["sg-0b80b497c45782089"]
-  subnets            = ["subnet-010677c7ca50c7227", "subnet-059433eb5160b72b1"]
+  security_groups    = ["sg-07c6caad7f69dd320"]
+  subnets            = ["subnet-0f7bf31dcfe3ad564", "subnet-030f6062c36d7a4f2"]
 
   enable_deletion_protection = false
 }
@@ -90,7 +90,7 @@ resource "aws_alb_target_group" "hello_world_tg" {
   name     = "hello-world-tg-6"
   port     = 3000
   protocol = "HTTP"
-  vpc_id   = "vpc-00ee86013309f6fb4"
+  vpc_id   = "vpc-07eff38e2a44c08ca"
   target_type = "ip"
   health_check {
     path                = "/"
