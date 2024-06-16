@@ -111,5 +111,4 @@ resource "aws_alb_listener" "http" {
     type = "forward"
     target_group_arn = aws_alb_target_group.hello_world_tg.arn
   }
-}
 }
